@@ -5,305 +5,224 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
-    <title>flipkart clone</title>
+    <link rel="stylesheet" href="utils.css">
+    <title>responsive page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
 
-   <style>
-    * {
-    margin: 0;
-    padding: 0;
-}
+        :root {
+            --main-bg-color: blue;
+        }
 
-header {
-    background-color: blue;
-    height: 10vh;
-    justify-content: center;
-    z-index: 3;
-    position: sticky;
+        footer {
+            height: 12vh;
+            background-color: var(--main-bg-color);
+            color: white;
+            display: flex;
 
-}
+        }
 
-ul #move {
-    color: aqua;
-    animation: move 3s  0s infinite ease-in-out ;
-    border-radius: 0px 12px 0px 9px;
-   
-}
-@keyframes move {
-    0%{
-        font-size: 5px;
-        color:orange;
-        background-color: bisque;
-        width: 0px;
-    }
-    30%{
-        font-size: 10px;
-        color: cyan;
-        background-color: bisque;
-        width: 100px;
-    }
-    50%{
-        font-size:15px;
-        color: green;
-        background-color: bisque;
-        width: 150px;
-    }
-    80%{
-        font-size: 18px;
-        color: brown;
-        background-color: bisque;
-        width: 180px;
-    }
-    100%{
-        font-size: 20px;
-        color: gray;
-        background-color: bisque;
-        width: 200px;
-    }
-}
-nav ul {
-    display: flex;
+        header {
 
+            background-color: var(--main-bg-color);
+            color: white;
 
-}
+        }
 
-li {
-    list-style: none;
-    padding: 0 2%;
-    color: white;
+        nav ul li {
+            list-style: none;
+            padding: 0 23px;
+        }
 
-}
+        .a:hover {
+            font-size: 10px;
 
-li img {
-    width: 100px;
-    height: 25px;
-}
+        }
 
-ul {
-    padding: 18px;
-}
+        nav ul {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            height: 12vh;
 
-.load {
-    /* background-color: red; */
-    height: 2px;
-    animation: load 0.5s ease-in-out 1;
-}
+        }
 
-@keyframes load {
-    0% {
-        width: 0vw;
-        background-color: red;
-    }
+        nav {
+            display: flex;
+            align-items: center;
+        }
 
-    30% {
-        width: 30vw;
-        background-color: red;
-    }
+        nav .logo {
+            display: flex;
+        }
 
-    40% {
-        width: 40vw;
-        background-color: red;
-    }
+        .logo img {
+            width: 50px;
+            height: 25px;
+        }
 
-    50% {
-        width: 50vw;
-        background-color: red;
-    }
+        .container {
+            min-height: calc(100vh - 12vh - 12vh);
+        }
 
-    60% {
-        width: 60vw;
-        background-color: red;
-    }
+        h1 {
+            margin-top: 10px;
+            border: 2px solid black;
+            text-align: center;
+            animation: hover 3s ease-in-out infinite;
+        }
 
-    70% {
-        width: 70vw;
-        background-color: red;
-    }
+        @keyframes hover {
+            0% {
+                color: cyan;
+                border-color: blue;
+            }
 
-    90% {
-        width: 80vw;
-        background-color: red;
-    }
+            30% {
+                color: aquamarine;
+                border-color: orange;
+            }
 
-    100% {
-        width: 100vw;
-        background-color: red;
-    }
-}
+            50% {
+                color: yellow;
+                border-color: rebeccapurple;
+            }
 
+            100% {
+                color: orange;
+                border-color: antiquewhite;
+            }
+        }
 
+        .container {
+            display: flex;
+            text-align: center;
+            border: 2px solid black;
+            height: 80vh;
+            overflow: scroll;
+        }
 
-
-h1 {
-    padding-left: 222px;
-    padding-top: 18px;
-    display: inline;
-    width: 80vh;
-    margin-left: 180px;
-    box-shadow: red;
-    border: 2px solid white;
-    animation: hover 3s ease-in-out infinite;
-    margin-top: 10px;
-}
-
-@keyframes hover {
-    0% {
-        color: cyan;
-    }
-
-    30% {
-        border-color: orange;
-    }
-
-    50% {}
-}
-
-
-
-.container {
-    display: flex;
-    /* background-color: cyan; */
-    margin-left: 100px;
-    margin-right: 100px;
-    border: 2px solid black;
-    height: 80vh;
-    overflow: scroll;
-}
-
-.txt {
-    margin-left: 60px;
-}
-
-.container img {
-    width: 200px;
-    height: 200px;
-    border: 2px solid black;
-    margin: 5px;
-}
-
-.flex img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 800px;
-    margin-top: 20px;
-    margin-left: 240px;
-    height: 500px;
-}
-
-.signin {
-    border-radius: 40px;
-    color: white;
-    overflow: hidden;
-}
-
-.signin img {
-    width: 37px;
-
-}
-
-#sin {
-    color: white;
-    margin: 7px;
-}
-
-.section {
-    font-size: 30px;
-    border: 2px solid black;
-    background-color: aqua;
-   
-  
-}
-
-   </style>
+        .container img {
+            width: 200px;
+            height: 200px;
+            border: 2px solid black;
+            margin: 5px;
+        }
+    </style>
 </head>
+
 <body>
-    <div class="load">loading</div>
     <header>
         <nav>
+            <div class="logo">
+                <img src="logo.png" alt="">
+            </div>
             <ul>
-                <li><img src="img/logo.png" alt="loading"></li>
-                <li class="one">HOME</li>
-                <li class="one">ABOUT</li>
-                <li class="one">CONTACT</li>
-                <li>
-                    <div class="box">
-                        <input type="text" name="search" placeholder="search here" style="width: 300px "
-                            style="border-radius:10px">
-                    </div>
-                </li>
-                <li><button style="border-radius:0px">search</button></li>
-                <li>
-
-                    <button class="signin"><img src="img/s.jpg" alt="loading"> </button>
-                    <br> <a href="login.html" id="sin">sign in</a>
-                    <li><p id="move">welcome to flipkart</p></li>
+                <li class="a">HOME</li>
+                <li class="a">ABOUT</li>
+                <li class="a">CONTACT</li>
+                <li> <input type="text" placeholder="SEARCH HERE"></li>
             </ul>
-        </nav>
+
     </header>
     <main>
-        <h1>WELCOME TO ONLINE SHOPPING STORE</h1>
-        <div class="flex"><img src="s.jpg" alt="loading"></div>
+        <h1>WELCOME TO FLIPKART</h1>
         <div class="container">
+            <table>
+                <tr class="section">
+                    <td style="border:2px solid black">
+                        stationery section
+                    </td>
 
-            <div class="table">
-                <table>
-                    <tr class="section">
-                        <td style="border:2px solid black" >
-                            stationery section
-                        </td>
+                </tr>
+                <tr>
+                    <td><img src="img\book.jpg" alt="loading">
+                        <p class="txt"><br> long note books <br> on 10% sale<br> <a href="form.html"> grab now</p>
+                        </a>
+                    </td>
+                    <td><img src="img/blue pen.webp" alt="loading">
+                        <p class="txt"><br> blue pens<br> on 20% sale<br> <a href="form.html"> grab now</p></a>
+                    </td>
+                    <td><img src="img/blackpen.webp" alt="loading">
+                        <p class="txt"><br> black pens <br> on 20% sale<br> <a href="form.html"> grab now</p></a>
+                    </td>
+                    <td><img src="img/red pen.jpg" alt="loading">
+                        <p class="txt"><br> red pens <br> on 20% sale<br> <a href="form.html"> grab now</p></a>
+                    </td>
+                    <td><img src="img/coor ppers.jpg" alt="loading">
+                        <p class="txt"><br> color papers <br> on 20% sale<br> <a href="form.html"> grab now</p></a>
+                    </td>
+                    <td><img src="img/sketch.jpg" alt="loading">
+                        <p class="txt"><br> sketches <br> on 20% sale<br> <a href="form.html"> grab now</p></a>
+                    </td>
+                    <td><img src="img/img.jpg" alt="loading">
+                        <p class="txt"><br> shiny glitters <br> on 20% sale<br> <a href="form.html"> grab now</p>
+                        </a>
+                    </td>
+                    <td><img src="img/coor pencils.jfif" alt="loading">
+                        <p class="txt"><br> color pencils <br> on 20% sale<br> <a href="form.html"> grab now</p></a>
+                    </td>
+                    <td><img src="img/color pen.jfif" alt="loading">
+                        <p class="txt"><br> color pens <br> on 20% sale<br> <a href="form.html"> grab now</p></a>
+                    </td>
+                    <td><img src="img/scale.jpg" alt="loading">
+                        <p class="txt"><br>long scale plastic <br> on 20% sale<br> <a href="form.html"> grab now</p></a>
+                    </td>
+                    <td><img src="img/criket bat.jfif" alt="loading">
+                        <p class="txt"><br>cricket bats <br> on 20% sale<br> <a href="form.html"> grab now</p></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="section">plant section</td>
+                </tr>
 
-                    </tr>
-                    <tr>
-                        <td><img src="img\book.jpg" alt="loading">
-                            <p class="txt"><br> long note books <br> on 10% sale<br> <a href="form.html"> grab now</p>
-                            </a>
-                        </td>
-                        <td><img src="img/blue pen.webp" alt="loading">
-                            <p class="txt"><br> blue pens<br> on 20% sale<br> <a href="form.html"> grab now</p></a>
-                        </td>
-                        <td><img src="img/blackpen.webp" alt="loading">
-                            <p class="txt"><br> black pens <br> on 20% sale<br> <a href="form.html"> grab now</p></a>
-                        </td>
-                        <td><img src="img/red pen.jpg" alt="loading">
-                            <p class="txt"><br> red pens <br> on 20% sale<br> <a href="form.html"> grab now</p></a>
-                        </td>
-                        <td><img src="img/coor ppers.jpg" alt="loading">
-                            <p class="txt"><br> color papers <br> on 20% sale<br> <a href="form.html"> grab now</p></a>
-                        </td>
-                        <td><img src="img/sketch.jpg" alt="loading">
-                            <p class="txt"><br> sketches <br> on 20% sale<br> <a href="form.html"> grab now</p></a>
-                        </td>
-                        <td><img src="img/img.jpg" alt="loading">
-                            <p class="txt"><br> shiny glitters <br> on 20% sale<br> <a href="form.html"> grab now</p>
-                            </a>
-                        </td>
-                        <td><img src="img/coor pencils.jfif" alt="loading">
-                            <p class="txt"><br> color pencils <br> on 20% sale<br> <a href="form.html"> grab now</p></a>
-                        </td>
-                        <td><img src="img/color pen.jfif" alt="loading">
-                            <p class="txt"><br> color pens <br> on 20% sale<br> <a href="form.html"> grab now</p></a>
-                        </td>
-                        <td><img src="img/scale.jpg" alt="loading">
-                            <p class="txt"><br>long scale plastic <br> on 20% sale<br> <a href="form.html"> grab now</p></a>
-                        </td>
-                        <td><img src="img/criket bat.jfif" alt="loading">
-                            <p class="txt"><br>cricket bats <br> on 20% sale<br> <a href="form.html"> grab now</p></a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="section">plant section</td>
-                    </tr>
-                   
-                    </tr>
-                    <td><img src="img/succlet.jpg" alt="loading">
-                        <p class="txt"><br>succlet plant  <br> on 20% sale<br> <a href="form.html"> grab now</p></a>
+                </tr>
+                <td><img src="img/succlet.jpg" alt="loading">
+                    <p class="txt"><br>succlet plant <br> on 20% sale<br> <a href="form.html"> grab now</p></a>
+                </td>
+                <td><img src="img/jasemine.jpg" alt="loading">
+                    <p class="txt"><br>jasemine plant <br> on 20% sale<br> <a href="form.html"> grab now</p></a>
+                </td>
+                <td><img src="img/flower.jpg" alt="loading">
+                    <p class="txt"><br>flower plant <br> on 20% sale<br> <a href="form.html"> grab now</p></a>
+                </td>
+                <td><img src="img/img.jpg" alt="loading">
+                    <p class="txt"><br>cricket bats <br> on 20% sale<br> <a href="form.html"> grab now</p></a>
+                </td>
+                <td><img src="img/img.jpg" alt="loading">
+                    <p class="txt"><br>cricket bats <br> on 20% sale<br> <a href="form.html"> grab now</p></a>
+                </td>
+                <td><img src="img/img.jpg" alt="loading">
+                    <p class="txt"><br>cricket bats <br> on 20% sale<br> <a href="form.html"> grab now</p></a>
+                </td>
+                <td><img src="img/img.jpg" alt="loading">
+                    <p class="txt"><br>cricket bats <br> on 20% sale<br> <a href="form.html"> grab now</p></a>
+                </td>
+                <td><img src="img/img.jpg" alt="loading">
+                    <p class="txt"><br>cricket bats <br> on 20% sale<br> <a href="form.html"> grab now</p></a>
+                </td>
+                <td><img src="img/img.jpg" alt="loading">
+                    <p class="txt"><br>cricket bats <br> on 20% sale<br> <a href="form.html"> grab now</p></a>
+                </td>
+                <td><img src="img/img.jpg" alt="loading">
+                    <p class="txt"><br>cricket bats <br> on 20% sale<br> <a href="form.html"> grab now</p></a>
+                </td>
+                <td><img src="img/img.jpg" alt="loading">
+                    <p class="txt"><br>cricket bats <br> on 20% sale<br> <a href="form.html"> grab now</p></a>
+                </td>
+                </tr>
+                <tr>
+                    <td><img src="img/img.jpg" alt="loading">
+                        <p class="txt"><br>cricket bats <br> on 20% sale<br> <a href="form.html"> grab now</p></a>
                     </td>
-                    <td><img src="img/jasemine.jpg" alt="loading">
-                        <p class="txt"><br>jasemine plant  <br> on 20% sale<br> <a href="form.html"> grab now</p></a>
+                    <td><img src="img/plant.jpg" alt="loading">
+                        <p class="txt"><br>cricket bats <br> on 20% sale<br> <a href="form.html"> grab now</p></a>
                     </td>
-                    <td><img src="img/flower.jpg" alt="loading">
-                        <p class="txt"><br>flower plant <br> on 20% sale<br> <a href="form.html"> grab now</p></a>
+                    <td><img src="img/img.jpg" alt="loading">
+                        <p class="txt"><br>cricket bats <br> on 20% sale<br> <a href="form.html"> grab now</p></a>
                     </td>
                     <td><img src="img/img.jpg" alt="loading">
                         <p class="txt"><br>cricket bats <br> on 20% sale<br> <a href="form.html"> grab now</p></a>
@@ -329,155 +248,119 @@ h1 {
                     <td><img src="img/img.jpg" alt="loading">
                         <p class="txt"><br>cricket bats <br> on 20% sale<br> <a href="form.html"> grab now</p></a>
                     </td>
-                    </tr>
-                    <tr>
-                        <td><img src="img/img.jpg" alt="loading">
-                            <p class="txt"><br>cricket bats <br> on 20% sale<br> <a href="form.html"> grab now</p></a>
-                        </td>
-                        <td><img src="img/plant.jpg" alt="loading">
-                            <p class="txt"><br>cricket bats <br> on 20% sale<br> <a href="form.html"> grab now</p></a>
-                        </td>
-                        <td><img src="img/img.jpg" alt="loading">
-                            <p class="txt"><br>cricket bats <br> on 20% sale<br> <a href="form.html"> grab now</p></a>
-                        </td>
-                        <td><img src="img/img.jpg" alt="loading">
-                            <p class="txt"><br>cricket bats <br> on 20% sale<br> <a href="form.html"> grab now</p></a>
-                        </td>
-                        <td><img src="img/img.jpg" alt="loading">
-                            <p class="txt"><br>cricket bats <br> on 20% sale<br> <a href="form.html"> grab now</p></a>
-                        </td>
-                        <td><img src="img/img.jpg" alt="loading">
-                            <p class="txt"><br>cricket bats <br> on 20% sale<br> <a href="form.html"> grab now</p></a>
-                        </td>
-                        <td><img src="img/img.jpg" alt="loading">
-                            <p class="txt"><br>cricket bats <br> on 20% sale<br> <a href="form.html"> grab now</p></a>
-                        </td>
-                        <td><img src="img/img.jpg" alt="loading">
-                            <p class="txt"><br>cricket bats <br> on 20% sale<br> <a href="form.html"> grab now</p></a>
-                        </td>
-                        <td><img src="img/img.jpg" alt="loading">
-                            <p class="txt"><br>cricket bats <br> on 20% sale<br> <a href="form.html"> grab now</p></a>
-                        </td>
-                        <td><img src="img/img.jpg" alt="loading">
-                            <p class="txt"><br>cricket bats <br> on 20% sale<br> <a href="form.html"> grab now</p></a>
-                        </td>
-                        <td><img src="img/img.jpg" alt="loading">
-                            <p class="txt"><br>cricket bats <br> on 20% sale<br> <a href="form.html"> grab now</p></a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><img src="img/img.jpg" alt="loading">
-                            <p class="txt"><br>cricket bats <br> on 20% sale<br> <a href="form.html"> grab now</p></a>
-                        </td>
-                        <td><img src="img/img.jpg" alt="loading">
-                            <p class="txt"><br>cricket bats <br> on 20% sale<br> <a href="form.html"> grab now</p></a>
-                        </td>
-                        <td><img src="img/img.jpg" alt="loading">
-                            <p class="txt"><br>cricket bats <br> on 20% sale<br> <a href="form.html"> grab now</p></a>
-                        </td>
-                        <td><img src="img/img.jpg" alt="loading">
-                            <p class="txt"><br>cricket bats <br> on 20% sale<br> <a href="form.html"> grab now</p></a>
-                        </td>
-                        <td><img src="img/img.jpg" alt="loading">
-                            <p class="txt"><br>cricket bats <br> on 20% sale<br> <a href="form.html"> grab now</p></a>
-                        </td>
-                        <td><img src="img/img.jpg" alt="loading">
-                            <p class="txt"><br>cricket bats <br> on 20% sale<br> <a href="form.html"> grab now</p></a>
-                        </td>
-                        <td><img src="img/img.jpg" alt="loading">
-                            <p class="txt"><br>cricket bats <br> on 20% sale<br> <a href="form.html"> grab now</p></a>
-                        </td>
-                        <td><img src="img/img.jpg" alt="loading">
-                            <p class="txt"><br>cricket bats <br> on 20% sale<br> <a href="form.html"> grab now</p></a>
-                        </td>
-                        <td><img src="img/img.jpg" alt="loading">
-                            <p class="txt"><br>cricket bats <br> on 20% sale<br> <a href="form.html"> grab now</p></a>
-                        </td>
-                        <td><img src="img/img.jpg" alt="loading">
-                            <p class="txt"><br>cricket bats <br> on 20% sale<br> <a href="form.html"> grab now</p></a>
-                        </td>
-                        <td><img src="img/img.jpg" alt="loading">
-                            <p class="txt"><br>cricket bats <br> on 20% sale<br> <a href="form.html"> grab now</p></a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><img src="img/img.jpg" alt="loading">
-                            <p class="txt"><br>cricket bats <br> on 20% sale<br> <a href="form.html"> grab now</p></a>
-                        </td>
-                        <td><img src="img/img.jpg" alt="loading">
-                            <p class="txt"><br>cricket bats <br> on 20% sale<br> <a href="form.html"> grab now</p></a>
-                        </td>
-                        <td><img src="img/img.jpg" alt="loading">
-                            <p class="txt"><br>cricket bats <br> on 20% sale<br> <a href="form.html"> grab now</p></a>
-                        </td>
-                        <td><img src="img/img.jpg" alt="loading">
-                            <p class="txt"><br>cricket bats <br> on 20% sale<br> <a href="form.html"> grab now</p></a>
-                        </td>
-                        <td><img src="img/img.jpg" alt="loading">
-                            <p class="txt"><br>cricket bats <br> on 20% sale<br> <a href="form.html"> grab now</p></a>
-                        </td>
-                        <td><img src="img/img.jpg" alt="loading">
-                            <p class="txt"><br>cricket bats <br> on 20% sale<br> <a href="form.html"> grab now</p></a>
-                        </td>
-                        <td><img src="img/img.jpg" alt="loading">
-                            <p class="txt"><br>cricket bats <br> on 20% sale<br> <a href="form.html"> grab now</p></a>
-                        </td>
-                        <td><img src="img/img.jpg" alt="loading">
-                            <p class="txt"><br>cricket bats <br> on 20% sale<br> <a href="form.html"> grab now</p></a>
-                        </td>
-                        <td><img src="img/img.jpg" alt="loading">
-                            <p class="txt"><br>cricket bats <br> on 20% sale<br> <a href="form.html"> grab now</p></a>
-                        </td>
-                        <td><img src="img/img.jpg" alt="loading">
-                            <p class="txt"><br>cricket bats <br> on 20% sale<br> <a href="form.html"> grab now</p></a>
-                        </td>
-                        <td><img src="img/img.jpg" alt="loading">
-                            <p class="txt"><br>cricket bats <br> on 20% sale<br> <a href="form.html"> grab now</p></a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><img src="img/img.jpg" alt="loading">
-                            <p class="txt"><br>cricket bats <br> on 20% sale<br> <a href="form.html"> grab now</p></a>
-                        </td>
-                        <td><img src="img/img.jpg" alt="loading">
-                            <p class="txt"><br>cricket bats <br> on 20% sale<br> <a href="form.html"> grab now</p></a>
-                        </td>
-                        <td><img src="img/img.jpg" alt="loading">
-                            <p class="txt"><br>cricket bats <br> on 20% sale<br> <a href="form.html"> grab now</p></a>
-                        </td>
-                        <td><img src="img/img.jpg" alt="loading">
-                            <p class="txt"><br>cricket bats <br> on 20% sale<br> <a href="form.html"> grab now</p></a>
-                        </td>
-                        <td><img src="img/img.jpg" alt="loading">
-                            <p class="txt"><br>cricket bats <br> on 20% sale<br> <a href="form.html"> grab now</p></a>
-                        </td>
-                        <td><img src="img/img.jpg" alt="loading">
-                            <p class="txt"><br>cricket bats <br> on 20% sale<br> <a href="form.html"> grab now</p></a>
-                        </td>
-                        <td><img src="img/img.jpg" alt="loading">
-                            <p class="txt"><br>cricket bats <br> on 20% sale<br> <a href="form.html"> grab now</p></a>
-                        </td>
-                        <td><img src="img/img.jpg" alt="loading">
-                            <p class="txt"><br>cricket bats <br> on 20% sale<br> <a href="form.html"> grab now</p></a>
-                        </td>
-                        <td><img src="img/img.jpg" alt="loading">
-                            <p class="txt"><br>cricket bats <br> on 20% sale<br> <a href="form.html"> grab now</p></a>
-                        </td>
-                        <td><img src="img/img.jpg" alt="loading">
-                            <p class="txt"><br>cricket bats <br> on 20% sale<br> <a href="form.html"> grab now</p></a>
-                        </td>
-                        <td><img src="img/img.jpg" alt="loading">
-                            <p class="txt"><br>cricket bats <br> on 20% sale<br> <a href="form.html"> grab now</p></a>
-                        </td>
-                    </tr>
-                </table>
-            </div>
+                </tr>
+                <tr>
+                    <td><img src="img/img.jpg" alt="loading">
+                        <p class="txt"><br>cricket bats <br> on 20% sale<br> <a href="form.html"> grab now</p></a>
+                    </td>
+                    <td><img src="img/img.jpg" alt="loading">
+                        <p class="txt"><br>cricket bats <br> on 20% sale<br> <a href="form.html"> grab now</p></a>
+                    </td>
+                    <td><img src="img/img.jpg" alt="loading">
+                        <p class="txt"><br>cricket bats <br> on 20% sale<br> <a href="form.html"> grab now</p></a>
+                    </td>
+                    <td><img src="img/img.jpg" alt="loading">
+                        <p class="txt"><br>cricket bats <br> on 20% sale<br> <a href="form.html"> grab now</p></a>
+                    </td>
+                    <td><img src="img/img.jpg" alt="loading">
+                        <p class="txt"><br>cricket bats <br> on 20% sale<br> <a href="form.html"> grab now</p></a>
+                    </td>
+                    <td><img src="img/img.jpg" alt="loading">
+                        <p class="txt"><br>cricket bats <br> on 20% sale<br> <a href="form.html"> grab now</p></a>
+                    </td>
+                    <td><img src="img/img.jpg" alt="loading">
+                        <p class="txt"><br>cricket bats <br> on 20% sale<br> <a href="form.html"> grab now</p></a>
+                    </td>
+                    <td><img src="img/img.jpg" alt="loading">
+                        <p class="txt"><br>cricket bats <br> on 20% sale<br> <a href="form.html"> grab now</p></a>
+                    </td>
+                    <td><img src="img/img.jpg" alt="loading">
+                        <p class="txt"><br>cricket bats <br> on 20% sale<br> <a href="form.html"> grab now</p></a>
+                    </td>
+                    <td><img src="img/img.jpg" alt="loading">
+                        <p class="txt"><br>cricket bats <br> on 20% sale<br> <a href="form.html"> grab now</p></a>
+                    </td>
+                    <td><img src="img/img.jpg" alt="loading">
+                        <p class="txt"><br>cricket bats <br> on 20% sale<br> <a href="form.html"> grab now</p></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="img/img.jpg" alt="loading">
+                        <p class="txt"><br>cricket bats <br> on 20% sale<br> <a href="form.html"> grab now</p></a>
+                    </td>
+                    <td><img src="img/img.jpg" alt="loading">
+                        <p class="txt"><br>cricket bats <br> on 20% sale<br> <a href="form.html"> grab now</p></a>
+                    </td>
+                    <td><img src="img/img.jpg" alt="loading">
+                        <p class="txt"><br>cricket bats <br> on 20% sale<br> <a href="form.html"> grab now</p></a>
+                    </td>
+                    <td><img src="img/img.jpg" alt="loading">
+                        <p class="txt"><br>cricket bats <br> on 20% sale<br> <a href="form.html"> grab now</p></a>
+                    </td>
+                    <td><img src="img/img.jpg" alt="loading">
+                        <p class="txt"><br>cricket bats <br> on 20% sale<br> <a href="form.html"> grab now</p></a>
+                    </td>
+                    <td><img src="img/img.jpg" alt="loading">
+                        <p class="txt"><br>cricket bats <br> on 20% sale<br> <a href="form.html"> grab now</p></a>
+                    </td>
+                    <td><img src="img/img.jpg" alt="loading">
+                        <p class="txt"><br>cricket bats <br> on 20% sale<br> <a href="form.html"> grab now</p></a>
+                    </td>
+                    <td><img src="img/img.jpg" alt="loading">
+                        <p class="txt"><br>cricket bats <br> on 20% sale<br> <a href="form.html"> grab now</p></a>
+                    </td>
+                    <td><img src="img/img.jpg" alt="loading">
+                        <p class="txt"><br>cricket bats <br> on 20% sale<br> <a href="form.html"> grab now</p></a>
+                    </td>
+                    <td><img src="img/img.jpg" alt="loading">
+                        <p class="txt"><br>cricket bats <br> on 20% sale<br> <a href="form.html"> grab now</p></a>
+                    </td>
+                    <td><img src="img/img.jpg" alt="loading">
+                        <p class="txt"><br>cricket bats <br> on 20% sale<br> <a href="form.html"> grab now</p></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="img/img.jpg" alt="loading">
+                        <p class="txt"><br>cricket bats <br> on 20% sale<br> <a href="form.html"> grab now</p></a>
+                    </td>
+                    <td><img src="img/img.jpg" alt="loading">
+                        <p class="txt"><br>cricket bats <br> on 20% sale<br> <a href="form.html"> grab now</p></a>
+                    </td>
+                    <td><img src="img/img.jpg" alt="loading">
+                        <p class="txt"><br>cricket bats <br> on 20% sale<br> <a href="form.html"> grab now</p></a>
+                    </td>
+                    <td><img src="img/img.jpg" alt="loading">
+                        <p class="txt"><br>cricket bats <br> on 20% sale<br> <a href="form.html"> grab now</p></a>
+                    </td>
+                    <td><img src="img/img.jpg" alt="loading">
+                        <p class="txt"><br>cricket bats <br> on 20% sale<br> <a href="form.html"> grab now</p></a>
+                    </td>
+                    <td><img src="img/img.jpg" alt="loading">
+                        <p class="txt"><br>cricket bats <br> on 20% sale<br> <a href="form.html"> grab now</p></a>
+                    </td>
+                    <td><img src="img/img.jpg" alt="loading">
+                        <p class="txt"><br>cricket bats <br> on 20% sale<br> <a href="form.html"> grab now</p></a>
+                    </td>
+                    <td><img src="img/img.jpg" alt="loading">
+                        <p class="txt"><br>cricket bats <br> on 20% sale<br> <a href="form.html"> grab now</p></a>
+                    </td>
+                    <td><img src="img/img.jpg" alt="loading">
+                        <p class="txt"><br>cricket bats <br> on 20% sale<br> <a href="form.html"> grab now</p></a>
+                    </td>
+                    <td><img src="img/img.jpg" alt="loading">
+                        <p class="txt"><br>cricket bats <br> on 20% sale<br> <a href="form.html"> grab now</p></a>
+                    </td>
+                    <td><img src="img/img.jpg" alt="loading">
+                        <p class="txt"><br>cricket bats <br> on 20% sale<br> <a href="form.html"> grab now</p></a>
+                    </td>
+                </tr>
+            </table>
+
         </div>
-
-
     </main>
+    <footer class="flex-all-center">
+        <p>copyright mykart.com &copy;</p>
+    </footer>
 </body>
 
 </html>
-
-
