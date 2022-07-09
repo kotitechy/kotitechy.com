@@ -23,6 +23,8 @@
             background-color: var(--main-bg-color);
             color: white;
             display: flex;
+            justify-content: center;
+            align-items: center;
 
         }
 
@@ -36,10 +38,11 @@
         nav ul li {
             list-style: none;
             padding: 0 23px;
+            font-size:small;
         }
 
         .a:hover {
-            font-size: 10px;
+            font-size: bolder;
 
         }
 
@@ -193,6 +196,9 @@
 
         /* On smaller screens, decrease text size */
         @media only screen and (max-width: 300px) {
+            .a{
+            font-size:bolder;
+            }
             .text {
                 font-size: 11px
             }
@@ -201,7 +207,7 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                margin-left: 30px;
+                
 
             }
         }
